@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ertertr</title>
+</head>
+<body>
+  <div class="login-box">
+    <div class="messages">
+     {{>message}}
+    </div>
+    
+    <form action="/password-reset" method="POST">
+     <h2>Reset your password</h2>
+  
+
+     <div class="user-box">
+      <input type="text" name="email" value="{{email}}" required>
+      <label>Email address</label>
+     </div>
+     <button type="submit">Send link</button>
+    </form>
+ </div>
+</body>
+</html>
